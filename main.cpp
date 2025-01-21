@@ -95,7 +95,7 @@ int createAccount(){
 
     copyString(USERNAMES, id, username);
     copyString(PASSWORDS, id, password);
-    BALANCES[id] = 100;
+    BALANCES[id] = 0;
 
     return id;
 }
