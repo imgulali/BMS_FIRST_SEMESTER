@@ -10,11 +10,7 @@ int TOTAL_USERS = -1;
 
 
 void clearScreen(){
-    #ifdef _WIN32
-        system("cls");
-    #else
-        system("clear");
-    #endif
+    system("cls");
 }
 
 // String Related Functions
