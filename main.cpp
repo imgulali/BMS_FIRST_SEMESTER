@@ -141,6 +141,13 @@ void deposit(int id){
     cout<<"Amount: ";
     cin>>amount;
 
+    if(amount =< 0){
+        cout<<"Invalid Amount "<<userId<<endl;
+        cout<<"Press any key to continue";
+        getch();
+        return;
+    }
+
     int newBalance = BALANCES[id] + amount;
     BALANCES[id] = newBalance;
 }
@@ -152,6 +159,12 @@ void withdraw(int id){
 
     int balance = BALANCES[id];
 
+    if(amount =< 0){
+        cout<<"Invalid Amount "<<userId<<endl;
+        cout<<"Press any key to continue";
+        getch();
+        return;
+    }
     if(amount > balance){
         cout<<"Amount is greater than the balance"<<endl;
         cout<<"Press any key to continue";
@@ -186,6 +199,13 @@ void transfer(int loggedInUser){
     cout<<"Amount: ";
     cin>>amount;
 
+    if(amount =< 0){
+        cout<<"Invalid Amount "<<userId<<endl;
+        cout<<"Press any key to continue";
+        getch();
+        return;
+    }
+    
     if(amount > BALANCES[loggedInUser]){
         cout<<"Amount is greater than the balance"<<endl;
         cout<<"Press any key to continue";
