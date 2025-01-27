@@ -141,8 +141,8 @@ void deposit(int id){
     cout<<"Amount: ";
     cin>>amount;
 
-    if(amount =< 0){
-        cout<<"Invalid Amount "<<userId<<endl;
+    if(amount <= 0){
+        cout<<"Invalid Amount "<<endl;
         cout<<"Press any key to continue";
         getch();
         return;
@@ -159,8 +159,8 @@ void withdraw(int id){
 
     int balance = BALANCES[id];
 
-    if(amount =< 0){
-        cout<<"Invalid Amount "<<userId<<endl;
+    if(amount <= 0){
+        cout<<"Invalid Amount "<<endl;
         cout<<"Press any key to continue";
         getch();
         return;
@@ -199,8 +199,8 @@ void transfer(int loggedInUser){
     cout<<"Amount: ";
     cin>>amount;
 
-    if(amount =< 0){
-        cout<<"Invalid Amount "<<userId<<endl;
+    if(amount <= 0){
+        cout<<"Invalid Amount "<<endl;
         cout<<"Press any key to continue";
         getch();
         return;
